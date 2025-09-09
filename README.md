@@ -38,6 +38,8 @@ devtools::install_github("fbertran/granova")
 
 ``` r
 library(granova)
+#> Loading required package: car
+#> Loading required package: carData
 ## basic example code
 ```
 
