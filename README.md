@@ -15,7 +15,9 @@ output: github_document
 
 This small collection of functions provides what we call elemental graphics for display of analysis of variance results, David C. Hoaglin, Frederick Mosteller and John W. Tukey (1991, ISBN:978-0-471-52735-0), Paul R. Rosenbaum (1989) <doi:10.2307/2684513>, Robert M. Pruzek and James E. Helmreich <https://jse.amstat.org/v17n1/helmreich.html>. 
 
-    The term elemental derives from the fact that each function is aimed at construction of graphical displays that afford direct visualizations of data with respect to the fundamental questions that drive the particular analysis of variance methods. These functions can be particularly helpful for students and non-statistician analysts. But these methods should be quite generally helpful for work-a-day applications of all kinds, as they can help to identify outliers, clusters or patterns, as well as highlight the role of non-linear transformations of data.
+The term elemental derives from the fact that each function is aimed at construction of graphical displays that afford direct visualizations of data with respect to the fundamental questions that drive the particular analysis of variance methods. These functions can be particularly helpful for students and non-statistician analysts. But these methods should be quite generally helpful for work-a-day applications of all kinds, as they can help to identify outliers, clusters or patterns, as well as highlight the role of non-linear transformations of data.
+
+This package has been written by Robert M. Pruzek and James E. Helmreich. Frederic Bertrand is now the maintainer of package and has been doing several code fixes and improvements to the package.
 
 ## Installation
 
@@ -38,9 +40,6 @@ devtools::install_github("fbertran/granova")
 
 ``` r
 library(granova)
-#> Loading required package: car
-#> Loading required package: carData
-## basic example code
 ```
 
 
@@ -52,12 +51,13 @@ Drug A
 
 
 ``` r
+## basic example code
 granova.1w(arousal[,1:2], h.rng = 1.6, v.rng = 0.5, top.dot = .35)
 ```
 
 <div class="figure">
-<img src="man/figures/README-unnamed-chunk-5-1.png" alt="plot of chunk unnamed-chunk-5" width="100%" />
-<p class="caption">plot of chunk unnamed-chunk-5</p>
+<img src="man/figures/README-DrugA-1.png" alt="plot of chunk DrugA" width="100%" />
+<p class="caption">plot of chunk DrugA</p>
 </div>
 
 ```
@@ -83,8 +83,8 @@ granova.1w(wt.gain, group = anorexia[, 1], size.line = -3)
 ```
 
 <div class="figure">
-<img src="man/figures/README-unnamed-chunk-6-1.png" alt="plot of chunk unnamed-chunk-6" width="100%" />
-<p class="caption">plot of chunk unnamed-chunk-6</p>
+<img src="man/figures/README-anorexia-1.png" alt="plot of chunk anorexia" width="100%" />
+<p class="caption">plot of chunk anorexia</p>
 </div>
 
 ```
@@ -115,8 +115,8 @@ granova.1w(poison$SurvTime, group = poison$Group, ylab = "Survival Time")
 ```
 
 <div class="figure">
-<img src="man/figures/README-unnamed-chunk-8-1.png" alt="plot of chunk unnamed-chunk-8" width="100%" />
-<p class="caption">plot of chunk unnamed-chunk-8</p>
+<img src="man/figures/README-violation of constant variance across groups-1.png" alt="plot of chunk violation of constant variance across groups" width="100%" />
+<p class="caption">plot of chunk violation of constant variance across groups</p>
 </div>
 
 ```
@@ -150,8 +150,8 @@ ylab = "Survival Rate = Inverse of Survival Time")
 ```
 
 <div class="figure">
-<img src="man/figures/README-unnamed-chunk-9-1.png" alt="plot of chunk unnamed-chunk-9" width="100%" />
-<p class="caption">plot of chunk unnamed-chunk-9</p>
+<img src="man/figures/README-RateSurvTime-1.png" alt="plot of chunk RateSurvTime" width="100%" />
+<p class="caption">plot of chunk RateSurvTime</p>
 </div>
 
 ```
@@ -188,8 +188,8 @@ res = TRUE)
 ```
 
 <div class="figure">
-<img src="man/figures/README-unnamed-chunk-10-1.png" alt="plot of chunk unnamed-chunk-10" width="100%" />
-<p class="caption">plot of chunk unnamed-chunk-10</p>
+<img src="man/figures/README-Nonparametric version-1.png" alt="plot of chunk Nonparametric version" width="100%" />
+<p class="caption">plot of chunk Nonparametric version</p>
 </div>
 
 ```

@@ -22,7 +22,9 @@ knitr::opts_chunk$set(
 
 This small collection of functions provides what we call elemental graphics for display of analysis of variance results, David C. Hoaglin, Frederick Mosteller and John W. Tukey (1991, ISBN:978-0-471-52735-0), Paul R. Rosenbaum (1989) <doi:10.2307/2684513>, Robert M. Pruzek and James E. Helmreich <https://jse.amstat.org/v17n1/helmreich.html>. 
 
-    The term elemental derives from the fact that each function is aimed at construction of graphical displays that afford direct visualizations of data with respect to the fundamental questions that drive the particular analysis of variance methods. These functions can be particularly helpful for students and non-statistician analysts. But these methods should be quite generally helpful for work-a-day applications of all kinds, as they can help to identify outliers, clusters or patterns, as well as highlight the role of non-linear transformations of data.
+The term elemental derives from the fact that each function is aimed at construction of graphical displays that afford direct visualizations of data with respect to the fundamental questions that drive the particular analysis of variance methods. These functions can be particularly helpful for students and non-statistician analysts. But these methods should be quite generally helpful for work-a-day applications of all kinds, as they can help to identify outliers, clusters or patterns, as well as highlight the role of non-linear transformations of data.
+
+This package has been written by Robert M. Pruzek and James E. Helmreich. Frederic Bertrand is now the maintainer of package and has been doing several code fixes and improvements to the package.
 
 ## Installation
 
@@ -42,7 +44,6 @@ devtools::install_github("fbertran/granova")
 
 ```{r example}
 library(granova)
-## basic example code
 ```
 
 ```{r}
@@ -51,13 +52,14 @@ data(arousal)
 
 Drug A
 
-```{r}
+```{r DrugA}
+## basic example code
 granova.1w(arousal[,1:2], h.rng = 1.6, v.rng = 0.5, top.dot = .35)
 ```
 
 #########################
 
-```{r}
+```{r anorexia}
 data(anorexia, package="MASS")
 wt.gain <- anorexia[, 3] - anorexia[, 2]
 granova.1w(wt.gain, group = anorexia[, 1], size.line = -3)
@@ -70,19 +72,19 @@ data(poison)
 ```
 
 Note violation of constant variance across groups in following graphic.
-```{r}
+```{r violation of constant variance across groups}
 granova.1w(poison$SurvTime, group = poison$Group, ylab = "Survival Time")
 ```
 
 RateSurvTime = SurvTime^-1
-```{r}
+```{r RateSurvTime}
 granova.1w(poison$RateSurvTime, group = poison$Group, 
 ylab = "Survival Rate = Inverse of Survival Time")
 ```
 
 Nonparametric version: RateSurvTime ranked and rescaled to be comparable to RateSurvTime; note labels as well as residual (rug) plot below.
 
-```{r}
+```{r Nonparametric version}
 granova.1w(poison$RankRateSurvTime, group = poison$Group, 
 ylab = "Ranked and Centered Survival Rates",
 main = "One-way ANOVA display, poison data (ignoring 2-way set-up)", 

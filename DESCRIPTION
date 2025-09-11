@@ -3,13 +3,14 @@ Version: 2.3
 Date: 2025-09-09
 Title: Graphical Analysis of Variance
 Authors@R: c(
-	person(given = "Frederic", family= "Bertrand", role = c("cre"), email = "frederic.bertrand@lecnam.net", comment = c(ORCID = "0000-0002-0837-8281")),
+	person(given = "Frederic", family= "Bertrand", role = c("aut", "cre"), email = "frederic.bertrand@lecnam.net", comment = c(ORCID = "0000-0002-0837-8281")),
 	person(given = "Robert M.", family= "Pruzek", role = c("aut"), email = "RMPruzek@yahoo.com"),
 	person(given = "James E.", family= "Helmreich", role = c("aut"), email = "James.Helmreich@Marist.edu"))
-Author: Frederic Bertrand [cre] (<https://orcid.org/0000-0002-0837-8281>), Robert M. Pruzek [aut], James E. Helmreich [aut]
+Author: Frederic Bertrand [aut, cre] (<https://orcid.org/0000-0002-0837-8281>), Robert M. Pruzek [aut], James E. Helmreich [aut]
 Maintainer: Frederic Bertrand <frederic.bertrand@lecnam.net>
-Depends: R (>= 3.1.1), car (>= 2.0-21)
-Suggests: mgcv, rgl, tcltk, MASS, testthat (>= 3.0.0)
+Depends: R (>= 3.1.1) 
+Imports: car (>= 2.0-21)
+Suggests: mgcv, rgl, tcltk, MASS, stringr, testthat (>= 3.0.0)
 Description: This small collection of functions provides what we call elemental graphics for display of analysis of variance
     results, David C. Hoaglin, Frederick Mosteller and John W. Tukey (1991, ISBN:978-0-471-52735-0), Paul R. Rosenbaum (1989) 
     <doi:10.2307/2684513>, Robert M. Pruzek and James E. Helmreich <https://jse.amstat.org/v17n1/helmreich.html>. 
@@ -23,5 +24,7 @@ License: GPL (>= 2)
 LazyLoad: yes
 LazyData: yes
 Encoding: UTF-8
+URL: https://fbertran.github.io/granova/, https://github.com/fbertran/granova/
+BugReports: https://github.com/fbertran/granova/issues/
 Config/testthat/edition: 3
 RoxygenNote: 7.3.2

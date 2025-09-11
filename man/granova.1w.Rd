@@ -61,30 +61,30 @@ granova.1w(data, group = NULL, dg = 2, h.rng = 1.25, v.rng = 0.2,
 \item{stats}{Contains a table of statistics by group: the size of each group, the contrast coefficients used in plotting the groups, the weighted
  means, means, and 20\% trimmed means, and the group variances and standard deviations.}
 }
-  \references{Fundamentals of Exploratory Analysis of Variance, Hoaglin D., Mosteller F. and Tukey J. eds., Wiley, 1991.
-}
-
+\references{Fundamentals of Exploratory Analysis of Variance, Hoaglin D., Mosteller F. and Tukey J. eds., Wiley, 1991.}
 \author{Robert M. Pruzek \email{RMPruzek@yahoo.com}, 
-
 James E. Helmreich \email{James.Helmreich@Marist.edu}  
 }
- 
-\seealso{\code{\link{granova.2w}}, \code{\link{granova.contr}}, \code{\link{granova.ds}} }
+ \seealso{\code{\link{granova.2w}}, \code{\link{granova.contr}}, \code{\link{granova.ds}} }
 \examples{
-	
 data(arousal)
-#Drug A
+summary(arousal)
+
+##Drug A
 granova.1w(arousal[,1:2], h.rng = 1.6, v.rng = 0.5, top.dot = .35)
 
 #########################
 
 data(anorexia, package="MASS")
+summary(anorexia)
 wt.gain <- anorexia[, 3] - anorexia[, 2]
 granova.1w(wt.gain, group = anorexia[, 1], size.line = -3)
 
 ##########################
 
 data(poison)
+summary(poison)
+
 ##Note violation of constant variance across groups in following graphic.
 granova.1w(poison$SurvTime, group = poison$Group, ylab = "Survival Time")
 ##RateSurvTime = SurvTime^-1

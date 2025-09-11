@@ -1,0 +1,11 @@
+test_that("granova.ds returns a summary matrix", {
+  data(blood_lead, package="granova")
+  res <- granova.ds(blood_lead, revc = FALSE, sw = 0.3, ne = 0.5)
+  expect_true(is.matrix(res) || is.data.frame(res))
+  rn <- rownames(res)
+  expect_true(any(grepl("^n$", rn)))
+  expect_true(any(grepl("^mean\\(x\\)$", rn)))
+  expect_true(any(grepl("^mean\\(y\\)$", rn)))
+  expect_true(any(grepl("^mean\\(D=x-y\\)$", rn)))
+  expect_true(any(grepl("^SD\\(D\\)$", rn)))
+})
