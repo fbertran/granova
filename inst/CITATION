@@ -1,0 +1,22 @@
+citHeader("To cite <PACKAGE> in publications use:")
+
+titl <- meta$Title
+year <- sub(".*(2[[:digit:]]{3})-.*", "\\1", meta$Date)
+vers <- paste("R package version", meta$Version)
+doi <- paste0("10.32614/CRAN.package.", meta$Package)
+urldoi <- paste0("https://doi.org/", doi)
+
+bibentry(bibtype="Manual",
+         title = titl,
+         author = c(person(given = "Frederic", family="Bertrand"), person(given = "Robert M.", family="Pruzek"), person(given = "James E.", family="Helmreich")),
+   publisher = "manual",
+         year         = year,
+         note         = vers,
+         url          = "https://fbertran.github.io/bigalgebra/",
+         doi          = doi,
+         textVersion = 
+         paste("Frederic Bertrand, Robert M. Pruzek and James E. Helmreich(",year ,"). ",
+               titl, ", ", vers, ". doi:", doi, ".", sep=""
+               )
+)
+

@@ -15,7 +15,10 @@ knitr::opts_chunk$set(
 
 # granova
 
+<https://doi.org/10.32614/CRAN.package.granova>
+
 <!-- badges: start -->
+[![](https://img.shields.io/badge/doi-10.32614/CRAN.package.granova-blue.svg)](https://doi.org/10.32614/CRAN.package.granova)
 [![CRAN status](https://www.r-pkg.org/badges/version/granova)](https://CRAN.R-project.org/package=granova)
 [![R-CMD-check](https://github.com/fbertran/granova/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/fbertran/granova/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->

@@ -8,7 +8,10 @@ output: github_document
 
 # granova
 
+<https://doi.org/10.32614/CRAN.package.granova>
+
 <!-- badges: start -->
+[![](https://img.shields.io/badge/doi-10.32614/CRAN.package.granova-blue.svg)](https://doi.org/10.32614/CRAN.package.granova)
 [![CRAN status](https://www.r-pkg.org/badges/version/granova)](https://CRAN.R-project.org/package=granova)
 [![R-CMD-check](https://github.com/fbertran/granova/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/fbertran/granova/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
@@ -62,10 +65,10 @@ granova.1w(arousal[,1:2], h.rng = 1.6, v.rng = 0.5, top.dot = .35)
 
 ```
 #> $grandsum
-#>     Grandmean        df.bet       df.with        MS.bet       MS.with        F.stat 
-#>         22.35          1.00         18.00         73.73          6.86         10.75 
-#>        F.prob SS.bet/SS.tot 
-#>          0.00          0.37 
+#>     Grandmean        df.bet       df.with        MS.bet       MS.with 
+#>         22.35          1.00         18.00         73.73          6.86 
+#>        F.stat        F.prob SS.bet/SS.tot 
+#>         10.75          0.00          0.37 
 #> 
 #> $stats
 #>         Size Contrast Coef Wt'd Mean  Mean Trim'd Mean Var. St. Dev.
@@ -89,10 +92,10 @@ granova.1w(wt.gain, group = anorexia[, 1], size.line = -3)
 
 ```
 #> $grandsum
-#>     Grandmean        df.bet       df.with        MS.bet       MS.with        F.stat 
-#>          2.76          2.00         69.00        307.32         56.68          5.42 
-#>        F.prob SS.bet/SS.tot 
-#>          0.01          0.14 
+#>     Grandmean        df.bet       df.with        MS.bet       MS.with 
+#>          2.76          2.00         69.00        307.32         56.68 
+#>        F.stat        F.prob SS.bet/SS.tot 
+#>          5.42          0.01          0.14 
 #> 
 #> $stats
 #>      Size Contrast Coef Wt'd Mean  Mean Trim'd Mean  Var. St. Dev.
@@ -121,10 +124,10 @@ granova.1w(poison$SurvTime, group = poison$Group, ylab = "Survival Time")
 
 ```
 #> $grandsum
-#>     Grandmean        df.bet       df.with        MS.bet       MS.with        F.stat 
-#>          0.48         11.00         36.00          0.20          0.02          9.01 
-#>        F.prob SS.bet/SS.tot 
-#>          0.00          0.73 
+#>     Grandmean        df.bet       df.with        MS.bet       MS.with 
+#>          0.48         11.00         36.00          0.20          0.02 
+#>        F.stat        F.prob SS.bet/SS.tot 
+#>          9.01          0.00          0.73 
 #> 
 #> $stats
 #>    Size Contrast Coef Wt'd Mean Mean Trim'd Mean Var. St. Dev.
@@ -156,10 +159,10 @@ ylab = "Survival Rate = Inverse of Survival Time")
 
 ```
 #> $grandsum
-#>     Grandmean        df.bet       df.with        MS.bet       MS.with        F.stat 
-#>          2.62         11.00         36.00          5.17          0.24         21.53 
-#>        F.prob SS.bet/SS.tot 
-#>          0.00          0.87 
+#>     Grandmean        df.bet       df.with        MS.bet       MS.with 
+#>          2.62         11.00         36.00          5.17          0.24 
+#>        F.stat        F.prob SS.bet/SS.tot 
+#>         21.53          0.00          0.87 
 #> 
 #> $stats
 #>    Size Contrast Coef Wt'd Mean Mean Trim'd Mean Var. St. Dev.
@@ -194,10 +197,10 @@ res = TRUE)
 
 ```
 #> $grandsum
-#>     Grandmean        df.bet       df.with        MS.bet       MS.with        F.stat 
-#>          2.49         11.00         36.00          3.70          0.19         19.18 
-#>        F.prob SS.bet/SS.tot 
-#>          0.00          0.85 
+#>     Grandmean        df.bet       df.with        MS.bet       MS.with 
+#>          2.49         11.00         36.00          3.70          0.19 
+#>        F.stat        F.prob SS.bet/SS.tot 
+#>         19.18          0.00          0.85 
 #> 
 #> $stats
 #>    Size Contrast Coef Wt'd Mean Mean Trim'd Mean Var. St. Dev.

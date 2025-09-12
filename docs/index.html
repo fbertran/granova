@@ -49,6 +49,7 @@
   <main id="main" class="col-md-9"><div class="section level1">
 <div class="page-header"><h1 id="granova">granova<a class="anchor" aria-label="anchor" href="#granova"></a>
 </h1></div>
+<p><a href="https://doi.org/10.32614/CRAN.package.granova" class="external-link uri">https://doi.org/10.32614/CRAN.package.granova</a></p>
 <!-- badges: start -->
 
 <p>This small collection of functions provides what we call elemental graphics for display of analysis of variance results, David C. Hoaglin, Frederick Mosteller and John W. Tukey (1991, <a href="ISBN:978-0-471-52735-0" class="uri">ISBN:978-0-471-52735-0</a>), Paul R. Rosenbaum (1989) <a href="doi:10.2307/2684513" class="uri">doi:10.2307/2684513</a>, Robert M. Pruzek and James E. Helmreich <a href="https://jse.amstat.org/v17n1/helmreich.html" class="external-link uri">https://jse.amstat.org/v17n1/helmreich.html</a>.</p>
@@ -81,10 +82,10 @@ plot of chunk DrugA
 </p>
 </div>
 <pre><code><span><span class="co">#&gt; $grandsum</span></span>
-<span><span class="co">#&gt;     Grandmean        df.bet       df.with        MS.bet       MS.with        F.stat</span></span>
-<span><span class="co">#&gt;         22.35          1.00         18.00         73.73          6.86         10.75</span></span>
-<span><span class="co">#&gt;        F.prob SS.bet/SS.tot</span></span>
-<span><span class="co">#&gt;          0.00          0.37</span></span>
+<span><span class="co">#&gt;     Grandmean        df.bet       df.with        MS.bet       MS.with</span></span>
+<span><span class="co">#&gt;         22.35          1.00         18.00         73.73          6.86</span></span>
+<span><span class="co">#&gt;        F.stat        F.prob SS.bet/SS.tot</span></span>
+<span><span class="co">#&gt;         10.75          0.00          0.37</span></span>
 <span><span class="co">#&gt;</span></span>
 <span><span class="co">#&gt; $stats</span></span>
 <span><span class="co">#&gt;         Size Contrast Coef Wt'd Mean  Mean Trim'd Mean Var. St. Dev.</span></span>
@@ -102,10 +103,10 @@ plot of chunk anorexia
 </p>
 </div>
 <pre><code><span><span class="co">#&gt; $grandsum</span></span>
-<span><span class="co">#&gt;     Grandmean        df.bet       df.with        MS.bet       MS.with        F.stat</span></span>
-<span><span class="co">#&gt;          2.76          2.00         69.00        307.32         56.68          5.42</span></span>
-<span><span class="co">#&gt;        F.prob SS.bet/SS.tot</span></span>
-<span><span class="co">#&gt;          0.01          0.14</span></span>
+<span><span class="co">#&gt;     Grandmean        df.bet       df.with        MS.bet       MS.with</span></span>
+<span><span class="co">#&gt;          2.76          2.00         69.00        307.32         56.68</span></span>
+<span><span class="co">#&gt;        F.stat        F.prob SS.bet/SS.tot</span></span>
+<span><span class="co">#&gt;          5.42          0.01          0.14</span></span>
 <span><span class="co">#&gt;</span></span>
 <span><span class="co">#&gt; $stats</span></span>
 <span><span class="co">#&gt;      Size Contrast Coef Wt'd Mean  Mean Trim'd Mean  Var. St. Dev.</span></span>
@@ -125,10 +126,10 @@ plot of chunk violation of constant variance across groups
 </p>
 </div>
 <pre><code><span><span class="co">#&gt; $grandsum</span></span>
-<span><span class="co">#&gt;     Grandmean        df.bet       df.with        MS.bet       MS.with        F.stat</span></span>
-<span><span class="co">#&gt;          0.48         11.00         36.00          0.20          0.02          9.01</span></span>
-<span><span class="co">#&gt;        F.prob SS.bet/SS.tot</span></span>
-<span><span class="co">#&gt;          0.00          0.73</span></span>
+<span><span class="co">#&gt;     Grandmean        df.bet       df.with        MS.bet       MS.with</span></span>
+<span><span class="co">#&gt;          0.48         11.00         36.00          0.20          0.02</span></span>
+<span><span class="co">#&gt;        F.stat        F.prob SS.bet/SS.tot</span></span>
+<span><span class="co">#&gt;          9.01          0.00          0.73</span></span>
 <span><span class="co">#&gt;</span></span>
 <span><span class="co">#&gt; $stats</span></span>
 <span><span class="co">#&gt;    Size Contrast Coef Wt'd Mean Mean Trim'd Mean Var. St. Dev.</span></span>
@@ -154,10 +155,10 @@ plot of chunk RateSurvTime
 </p>
 </div>
 <pre><code><span><span class="co">#&gt; $grandsum</span></span>
-<span><span class="co">#&gt;     Grandmean        df.bet       df.with        MS.bet       MS.with        F.stat</span></span>
-<span><span class="co">#&gt;          2.62         11.00         36.00          5.17          0.24         21.53</span></span>
-<span><span class="co">#&gt;        F.prob SS.bet/SS.tot</span></span>
-<span><span class="co">#&gt;          0.00          0.87</span></span>
+<span><span class="co">#&gt;     Grandmean        df.bet       df.with        MS.bet       MS.with</span></span>
+<span><span class="co">#&gt;          2.62         11.00         36.00          5.17          0.24</span></span>
+<span><span class="co">#&gt;        F.stat        F.prob SS.bet/SS.tot</span></span>
+<span><span class="co">#&gt;         21.53          0.00          0.87</span></span>
 <span><span class="co">#&gt;</span></span>
 <span><span class="co">#&gt; $stats</span></span>
 <span><span class="co">#&gt;    Size Contrast Coef Wt'd Mean Mean Trim'd Mean Var. St. Dev.</span></span>
@@ -185,10 +186,10 @@ plot of chunk Nonparametric version
 </p>
 </div>
 <pre><code><span><span class="co">#&gt; $grandsum</span></span>
-<span><span class="co">#&gt;     Grandmean        df.bet       df.with        MS.bet       MS.with        F.stat</span></span>
-<span><span class="co">#&gt;          2.49         11.00         36.00          3.70          0.19         19.18</span></span>
-<span><span class="co">#&gt;        F.prob SS.bet/SS.tot</span></span>
-<span><span class="co">#&gt;          0.00          0.85</span></span>
+<span><span class="co">#&gt;     Grandmean        df.bet       df.with        MS.bet       MS.with</span></span>
+<span><span class="co">#&gt;          2.49         11.00         36.00          3.70          0.19</span></span>
+<span><span class="co">#&gt;        F.stat        F.prob SS.bet/SS.tot</span></span>
+<span><span class="co">#&gt;         19.18          0.00          0.85</span></span>
 <span><span class="co">#&gt;</span></span>
 <span><span class="co">#&gt; $stats</span></span>
 <span><span class="co">#&gt;    Size Contrast Coef Wt'd Mean Mean Trim'd Mean Var. St. Dev.</span></span>
@@ -244,6 +245,7 @@ plot of chunk Nonparametric version
 <div class="dev-status">
 <h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
+<li><a href="https://doi.org/10.32614/CRAN.package.granova" class="external-link"><img src="https://img.shields.io/badge/doi-10.32614/CRAN.package.granova-blue.svg"></a></li>
 <li><a href="https://CRAN.R-project.org/package=granova" class="external-link"><img src="https://www.r-pkg.org/badges/version/granova" alt="CRAN status"></a></li>
 <li><a href="https://github.com/fbertran/granova/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/fbertran/granova/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
 </ul>
